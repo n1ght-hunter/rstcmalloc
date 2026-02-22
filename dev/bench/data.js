@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771725012227,
-  "repoUrl": "https://github.com/n1ght-hunter/rstcmalloc",
+  "lastUpdate": 1771725808422,
+  "repoUrl": "https://github.com/n1ght-hunter/rtmalloc",
   "entries": {
     "rtmalloc Benchmarks": [
       {
@@ -2039,6 +2039,470 @@ window.BENCHMARK_DATA = {
           {
             "name": "vec_growth/rt_std",
             "value": 6024.84,
+            "unit": "ns"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "samuelhuntnz@gmail.com",
+            "name": "Samuel Hunt",
+            "username": "n1ght-hunter"
+          },
+          "committer": {
+            "email": "samuelhuntnz@gmail.com",
+            "name": "Samuel Hunt",
+            "username": "n1ght-hunter"
+          },
+          "distinct": true,
+          "id": "a7c015b2a5a01d2cfa24df9c133e3a968b639dfc",
+          "message": "fmt",
+          "timestamp": "2026-02-22T14:31:16+13:00",
+          "tree_id": "96a9299764b97c0ae2596f49a83383e55e39269f",
+          "url": "https://github.com/n1ght-hunter/rtmalloc/commit/a7c015b2a5a01d2cfa24df9c133e3a968b639dfc"
+        },
+        "date": 1771725807856,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "batch_1000/rt_nightly/4096",
+            "value": 14209.82,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_nightly/512",
+            "value": 10632.15,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_nightly/64",
+            "value": 9999.71,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_nightly/8",
+            "value": 9672.42,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_nostd/4096",
+            "value": 46877.7,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_nostd/512",
+            "value": 21399.76,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_nostd/64",
+            "value": 13828.6,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_nostd/8",
+            "value": 12272.6,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_percpu/4096",
+            "value": 34344.22,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_percpu/512",
+            "value": 32983.63,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_percpu/64",
+            "value": 33909.8,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_percpu/8",
+            "value": 33249.81,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_std/4096",
+            "value": 14111.84,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_std/512",
+            "value": 10753.41,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_std/64",
+            "value": 10122.97,
+            "unit": "ns"
+          },
+          {
+            "name": "batch_1000/rt_std/8",
+            "value": 11036.86,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_nightly/2048",
+            "value": 23662.96,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_nightly/256",
+            "value": 23058.73,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_nightly/32",
+            "value": 24137.87,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_nostd/2048",
+            "value": 29018.32,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_nostd/256",
+            "value": 26263.96,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_nostd/32",
+            "value": 26242.35,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_percpu/2048",
+            "value": 34175.4,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_percpu/256",
+            "value": 34402.18,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_percpu/32",
+            "value": 34525.16,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_std/2048",
+            "value": 23185.91,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_std/256",
+            "value": 23287.61,
+            "unit": "ns"
+          },
+          {
+            "name": "churn/rt_std/32",
+            "value": 23324.31,
+            "unit": "ns"
+          },
+          {
+            "name": "cross_thread_free/rt_nightly",
+            "value": 437973.46,
+            "unit": "ns"
+          },
+          {
+            "name": "cross_thread_free/rt_nostd",
+            "value": 2169854.1,
+            "unit": "ns"
+          },
+          {
+            "name": "cross_thread_free/rt_percpu",
+            "value": 436962.79,
+            "unit": "ns"
+          },
+          {
+            "name": "cross_thread_free/rt_std",
+            "value": 437317.81,
+            "unit": "ns"
+          },
+          {
+            "name": "mixed_sizes/rt_nightly",
+            "value": 37076.47,
+            "unit": "ns"
+          },
+          {
+            "name": "mixed_sizes/rt_nostd",
+            "value": 43600.65,
+            "unit": "ns"
+          },
+          {
+            "name": "mixed_sizes/rt_percpu",
+            "value": 69670.39,
+            "unit": "ns"
+          },
+          {
+            "name": "mixed_sizes/rt_std",
+            "value": 38449.15,
+            "unit": "ns"
+          },
+          {
+            "name": "multithread_4t/rt_nightly",
+            "value": 219934.57,
+            "unit": "ns"
+          },
+          {
+            "name": "multithread_4t/rt_nostd",
+            "value": 4073760.95,
+            "unit": "ns"
+          },
+          {
+            "name": "multithread_4t/rt_percpu",
+            "value": 356678.23,
+            "unit": "ns"
+          },
+          {
+            "name": "multithread_4t/rt_std",
+            "value": 218699.39,
+            "unit": "ns"
+          },
+          {
+            "name": "producer_consumer/rt_nightly",
+            "value": 578077.05,
+            "unit": "ns"
+          },
+          {
+            "name": "producer_consumer/rt_nostd",
+            "value": 791839.86,
+            "unit": "ns"
+          },
+          {
+            "name": "producer_consumer/rt_percpu",
+            "value": 452459.65,
+            "unit": "ns"
+          },
+          {
+            "name": "producer_consumer/rt_std",
+            "value": 590854.27,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nightly/1024",
+            "value": 9.04,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nightly/256",
+            "value": 9.01,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nightly/4096",
+            "value": 9.95,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nightly/64",
+            "value": 9.02,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nightly/65536",
+            "value": 11.82,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nightly/8",
+            "value": 9.04,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nostd/1024",
+            "value": 11.28,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nostd/256",
+            "value": 11.27,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nostd/4096",
+            "value": 12.47,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nostd/64",
+            "value": 11.29,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nostd/65536",
+            "value": 14.31,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_nostd/8",
+            "value": 11.31,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_percpu/1024",
+            "value": 15.67,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_percpu/256",
+            "value": 15.69,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_percpu/4096",
+            "value": 13.12,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_percpu/64",
+            "value": 15.69,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_percpu/65536",
+            "value": 14.29,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_percpu/8",
+            "value": 15.68,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_std/1024",
+            "value": 9.01,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_std/256",
+            "value": 9.01,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_std/4096",
+            "value": 9.94,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_std/64",
+            "value": 9.01,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_std/65536",
+            "value": 11.81,
+            "unit": "ns"
+          },
+          {
+            "name": "single_alloc_dealloc/rt_std/8",
+            "value": 9.02,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_nightly/1",
+            "value": 83123.09,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_nightly/2",
+            "value": 122644.6,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_nightly/4",
+            "value": 175896.29,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_nightly/8",
+            "value": 365864.35,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_nostd/1",
+            "value": 86355.78,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_nostd/2",
+            "value": 398859.58,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_nostd/4",
+            "value": 2093836.95,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_nostd/8",
+            "value": 6026105.14,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_percpu/1",
+            "value": 142548.19,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_percpu/2",
+            "value": 218690.83,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_percpu/4",
+            "value": 272935.15,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_percpu/8",
+            "value": 542010.32,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_std/1",
+            "value": 83032.37,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_std/2",
+            "value": 123943.64,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_std/4",
+            "value": 176870.44,
+            "unit": "ns"
+          },
+          {
+            "name": "thread_scalability/rt_std/8",
+            "value": 372680.62,
+            "unit": "ns"
+          },
+          {
+            "name": "vec_growth/rt_nightly",
+            "value": 6031.32,
+            "unit": "ns"
+          },
+          {
+            "name": "vec_growth/rt_nostd",
+            "value": 6076.82,
+            "unit": "ns"
+          },
+          {
+            "name": "vec_growth/rt_percpu",
+            "value": 6194.46,
+            "unit": "ns"
+          },
+          {
+            "name": "vec_growth/rt_std",
+            "value": 6025.27,
             "unit": "ns"
           }
         ]
